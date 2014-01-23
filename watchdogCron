@@ -1,1 +1,2 @@
-*/1 * * * * ~/Desktop/Code/matlabWatchdog/checkWatchdog.sh
+MAILTO="joe.bell@gmail.com"
+*/1 * * * * ~/Desktop/Code/matlabWatchdog/checkWatchdog.sh > ~/Desktop/Code/matlabWatchdog/matlabWatchdog.log
