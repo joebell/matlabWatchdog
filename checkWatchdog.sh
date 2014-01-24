@@ -11,7 +11,8 @@ if [ ~/Desktop/Code/matlabWatchdog/.oneMinAgo -nt ~/Desktop/Code/matlabWatchdog/
 	crontab -r
 	echo "--- Watchdog cron job Removed ---"
 	now=$(date)
-	date | mail -s "RTFW Software Watchdog Tripped" 6178218253@vtext.com
-	echo "--- Sent text message notification ---"
+	echo "RTFW Software Watchdog Tripped: $now" | mail -r "rtfw.computer@gmail.com" 6178218253@vtext.com
+	echo "RTFW Software Watchdog Tripped: $now" | mail -s "RTFW Software Watchdog" -r "rtfw.computer@gmail.com" joe.bell@gmail.com
+	echo "--- Sent Email and Text message notification ---"
 fi
 
