@@ -1,1 +1,4 @@
-*/1 * * * * ~/Desktop/Code/matlabWatchdog/checkWatchdog.sh > ~/Desktop/Code/matlabWatchdog/matlabWatchdog.log
+*/1 * * * * /home/joe/Desktop/Code/matlabWatchdog/checkWatchdog.sh > /home/joe/Desktop/Code/matlabWatchdog/matlabWatchdog.log
+@reboot		/home/joe/Desktop/Code/matlabWatchdog/checkWatchdog.sh > /home/joe/Desktop/Code/matlabWatchdog/matlabWatchdog.log
+
+
